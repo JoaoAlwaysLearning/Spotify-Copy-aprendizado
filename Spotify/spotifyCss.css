@@ -1,0 +1,243 @@
+body{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column; /*Organizando em colunas tudo no corpo*/
+    background-color: #000;
+    text-align: center;
+    margin: 0;
+    color: #f1f1f8;
+    max-height: 100%;
+}
+.barraLateral{
+    background-color: #121212;
+    color: #b3b3b3;
+    font-weight: 700; /*Aumenta o tamanho da letra na página*/
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    width: auto;
+    max-width: 100%;
+    min-width: 3vw; /*valor relativo com base em algo que eu não entendi*/
+    margin: 5px;
+    padding-left: 10px;
+    overflow: hidden; /*Deixa o que passar a DIV escondida, normalmente não se usa no desenvolvimento*/
+}
+.conteudo{
+    display: flex;
+    flex-direction: row; /*em row, coisas na vertical, fiz pra manter tudo dentro da div alinhado na vertical, mas acho que dava pra usar o display: in-line flex ou algo assim*/
+}
+.iconLogo{
+    margin-top: auto; /*Como você ja sabe, margin auto é pra deixar no centro da div*/
+    margin-bottom: auto;
+    margin-right: 0.5rem;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.5rem;
+}
+.playText{
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.centralize{
+    display: relative; /*Coloca relativo pra conter os elementos absolutos dentro dele*/
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.botao{
+    border: none;
+    border-radius: 20px;
+    padding: 10px 5px 10px 5px; /*Isso aqui é pra deixar os padding mais clean a ordem é: top, right, bottom, left*/
+    min-width: 100px;
+    font-weight: 700;
+}
+.playlistOuvir{
+    position: relative;
+    width: 150px;
+    height: 170px;
+    border-radius: 5px; /*deixar a borda arredondada*/
+    background-color: aquamarine;
+    margin: auto;
+    padding-left: 10px;
+}
+.tipo{
+    position: absolute;
+    font-weight: 700;
+    background-color: #242424;
+    color: #b3b3b3;
+    text-align: left;
+    border: none;
+    padding: 4px 6px 4px 6px;
+    border-top-right-radius: 15px;
+}
+.imagemMusicas{
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+#logo{
+    width: 35px;
+    height: 35px;
+}
+#adição{
+    display: flex;
+    justify-content: flex-end; /*tenta alinhar um elemento flex no final da div em que ele se encontra, não consegui fazer funcionar 100%, mais testes necessarios*/
+    width: 24px;
+    height: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#library{
+    display: flex;
+    flex-direction: row;
+    margin-right: 6rem;
+}
+#spotify{
+    color: #f1f1f8;
+}
+#playlist{
+    background-color: #242424;
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #f1f1f8;
+    text-align: left; /*Text-align funciona muito bem pra alinhar textos e as div que tem esses textos, usei pra alinhar os botões na esquerda, é bem legal*/
+}
+#playlistButton{
+    background-color: #f1f1f8;
+    color: #121212;
+    border: none;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#cookie{
+    text-align: left;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#idioma{
+    margin-bottom: 30px;
+    text-align: left;
+}
+#lngButton{
+    border: 1px solid #f1f1f8;
+    border-radius: 10px;
+    background-color: #121212;
+    color: #f1f1f8;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+#globeIcon{
+    height: 11px;
+    width: 11px;
+}
+#barraSuperior{
+    background-color: #121212;
+    display: inline-flex;
+    left: 0;
+    width: 96%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700px;
+}
+#principal{
+    display: grid; /*Criei a grid, ou seja, divide as div em grid, muito útil, não entendi como divide a grid direito, só copiei o do spotify, normalmente faça isso em uma div dentro do body ao inves do proprio body, é melhor*/
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+}
+#iconesSuperior{
+    display: inline-flex;
+}
+#botoes{
+    margin-left: auto;
+}
+#pesquisa{
+    margin: auto;
+}
+#search{
+    background-color: #242424;
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    padding-left: 40px;
+    background-image: url("../spotifyImages/magnifying-glass-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: left;
+    background-position: 8px;
+    color: #f1f1f8;
+}
+#subs{
+    margin-right: 10px;
+    background-color: #121212;
+    color: #f1f1f8;
+}
+#login{
+    background-color: #f1f1f8;
+    color: #121212;
+}
+#partePrincipal{
+    background-color: #121212;
+    border-radius: 10px;
+    margin-left: 11px;
+    width: 96%;
+    padding: 10px;
+    overflow-y: scroll; /*scroll na barra lateral*/
+    max-height: 500px;    
+}
+#texto{
+    text-align: left;
+}
+#quadrados{
+    display: flex;
+    flex-flow: row wrap; /*isso aqui é pra controlar uma grid, gosto de fazer isso, legal demais, fazendo em grid*/
+    grid-gap: 18px;
+}
+#m1{
+    background-color: aqua;
+}
+#m2{
+    background-color: blue;
+}
+#m3{
+    background-color: red;
+}
+#m4{
+    background-color: purple;
+}
+#m5{
+    background-color: violet;
+}
+#m6{
+    background-color: pink;
+}
+#m7{
+    background-color: brown;
+}
+#m8{
+    background-color: orange;
+}
+#m9{
+    background-color: darkblue;
+}
+#m0{
+    background-color: darkred;
+}
